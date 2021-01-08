@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(211, 226, 255);
+}
+header a {
+    font-size: 30px;
+}
+header a:hover {
+background-color: yellow;
+color: red;
+}
+
+section a:link {
+background-color: white;
+}
+
+section a:visited {
+    background-color: blue;
+    color: white;
+}
+
+section.First p::first-line {
+    color: red;
+}
+
+h4 {
+    counter-reset: cuenta-numeros;
+}
+
+p.numeros::before {
+    content: counter(cuenta-numeros) '. ';
+    counter-increment: cuenta-numeros;
+}
+
+h1, header {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    font-weight: 100;
+}
+
+span {
+    color: black;
+    font-size: 80px;
+}
+
+footer {
+    font-style: italic;
+}
+
+img {
+    float: right;
+    width: 20%;
+    height: 20%;
+}
